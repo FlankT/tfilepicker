@@ -1,0 +1,62 @@
+apply plugin: 'com.android.library'
+
+
+android {
+    compileSdkVersion 27
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+    task  makeJar(type: Copy){
+        delete('build/libs/classes.jar')
+        from('build/intermediates/bundles/debug')
+        into('build/libs')
+        include('classes.jar')
+        rename('classes.jar','filepicker.jar')
+    }
+
+    makeJar.dependsOn(build)
+    //指定jdk版本
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.40'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.github.bumptech.glide:glide:3.6.0'
+    implementation 'com.android.support:support-v4:27.1.1'
+    implementation 'org.greenrobot:eventbus:3.1.1'
+    implementation 'top.zibin:Luban:1.1.3'
+    implementation 'com.yanzhenjie:permission:2.0.0-rc5'
+}
+
+
+
+
+
+
