@@ -5,22 +5,19 @@
 
 Add it in your root build.gradle at the end of repositories:
 
-allprojects {
+    allprojects {
 
 	  repositories {
 	  
 			...
 			
-			maven { url 'https://jitpack.io' }
-			
-		}
-		
+			maven { url 'https://jitpack.io' }			
+		  }	
 	}
-	
 	
 Add the dependency：
 
-dependencies {
+     dependencies {
 
 	        implementation 'com.github.FlankT:tfilepicker:V1.0'
 		
