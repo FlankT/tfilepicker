@@ -19,6 +19,6 @@ Add the dependency：
 
      dependencies {
 
-	        implementation 'com.github.FlankT:tfilepicker:V1.0'
+	        implementation 'com.github.FlankT:tfilepicker:v1.0'
 		
 	}
