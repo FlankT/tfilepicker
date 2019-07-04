@@ -1,6 +1,6 @@
 # tfilepicker
 
-文件选择，可自定义相关界面UI
+**文件选择，可自定义相关界面UI**
 
 1. 支持文件选择
 2. 支持图片选择
@@ -57,5 +57,6 @@ Add the dependency：
 		
 	}
 	
-Thanks:
-https://github.com/imLibo/FilePicker
+**Thanks**
+
+[tfilepicker](https://github.com/imLibo/FilePicker)
