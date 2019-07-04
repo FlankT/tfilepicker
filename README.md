@@ -12,7 +12,7 @@
 8. 图片Glide版本3.6
 
 
-# **示例：**
+# 示例：
           
 	FilePicker.from(this)                        
 		.chooseForBrowser()
@@ -35,7 +35,7 @@
         }
 	
 
-# **依赖方式：**
+# 依赖方式：
 
 Add it in your root build.gradle at the end of repositories:
 
