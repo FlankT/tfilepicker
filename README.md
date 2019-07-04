@@ -9,7 +9,7 @@
 5. 支持自定义选择view,颜色等
 6. 支持批量选择
 7. 默认已添加android 6.0权限申请
-8. 图片显示Glide版本3.6
+8. 图片Glide版本3.6
 
 
 **示例：**
@@ -35,7 +35,7 @@
         }
 	
 
-**使用方式：**
+**依赖方式：**
 
 Add it in your root build.gradle at the end of repositories:
 
