@@ -12,7 +12,7 @@
 8. 图片显示Glide版本3.6
 
 
-示例：
+**示例：**
           
 	FilePicker.from(this)                        
 		.chooseForBrowser()
@@ -35,7 +35,7 @@
         }
 	
 
-使用方式：
+**使用方式：**
 
 Add it in your root build.gradle at the end of repositories:
 
@@ -57,6 +57,6 @@ Add the dependency：
 		
 	}
 	
-**Thanks**
+# **Thanks**
 
-[tfilepicker](https://github.com/imLibo/FilePicker)
+[FilePicker](https://github.com/imLibo/FilePicker)
