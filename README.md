@@ -14,7 +14,7 @@
 
 # 示例：
           
-	FilePicker.from(this)                        
+    FilePicker.from(this)                        
 		.chooseForBrowser()
                 .setMaxCount(10)
                 .setFileTypes("doc", "docx", "pdf", "ppt", "pptx", "xlsx", "xls")
@@ -23,7 +23,7 @@
 	
 	
 	
-       protected void onActivityResult(int requestCode, int resultCode, Intent data) {	
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {	
        
         ArrayList<EssFile> essFileList = data.getParcelableArrayListExtra(Const.EXTRA_RESULT_SELECTION);
                        
@@ -32,7 +32,7 @@
                   Log.e("essFileList",essFileList.toString());
 		  
                }
-        }
+      }
 	
 
 # 依赖方式：
